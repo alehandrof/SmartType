@@ -1,5 +1,7 @@
 [
-	/*** Smart Double Quotes (“”) ***/
+
+/*** Smart Double Quotes (“”) ***/
+
 	// Surround selection with smart quotes
 	{ "keys": ["\""], "command": "insert_snippet", "args": {"contents": "“${0:$SELECTION}”"}, "context":
 		[
@@ -55,7 +57,9 @@
 			{ "key": "selector", "operator": "equal", "operand": "text", "match_all": true }
 		]
 	},
-	/*** Smart Single Quotes (‘’) ***/
+
+/*** Smart Single Quotes (‘’) ***/
+
 	// Surround selection with smart quotes
 	{ "keys": ["'"], "command": "insert_snippet", "args": {"contents": "‘${0:$SELECTION}’"}, "context":
 		[
@@ -111,4 +115,5 @@
 			{ "key": "selector", "operator": "equal", "operand": "text", "match_all": true }
 		]
 	}
+
 ]
