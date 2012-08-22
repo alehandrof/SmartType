@@ -1,6 +1,6 @@
 [
 	/*** Smart Double Quotes (“”) ***/
-	// Surround selection with smart quotes // OK, I think
+	// Surround selection with smart quotes
 	{ "keys": ["\""], "command": "insert_snippet", "args": {"contents": "“${0:$SELECTION}”"}, "context":
 		[
 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
@@ -8,7 +8,7 @@
 			{ "key": "selector", "operator": "equal", "operand": "text", "match_all": true }
 		]
 	},
-	// Auto-pair smart quotes // OK -- but what about following/preceding regexs?
+	// Auto-pair smart quotes
 	{ "keys": ["\""], "command": "insert_snippet", "args": {"contents": "“$0”"}, "context":
 		[
 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
@@ -36,7 +36,7 @@
 			{ "key": "selector", "operator": "equal", "operand": "text", "match_all": true }
 		]
 	},
-	// Do not overwrite smart quotes with dumb quotes // OK, I think
+	// Do not overwrite smart quotes with dumb quotes
 	{ "keys": ["\""], "command": "move", "args": {"by": "characters", "forward": true}, "context":
 		[
 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
@@ -45,6 +45,7 @@
 			{ "key": "selector", "operator": "equal", "operand": "text", "match_all": true }
 		]
 	},
+	// Remove paired smart quotes
 	{ "keys": ["backspace"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Left Right.sublime-macro"}, "context":
 		[
 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
@@ -55,7 +56,7 @@
 		]
 	},
 	/*** Smart Single Quotes (‘’) ***/
-	// Surround selection with smart quotes // OK, I think
+	// Surround selection with smart quotes
 	{ "keys": ["'"], "command": "insert_snippet", "args": {"contents": "‘${0:$SELECTION}’"}, "context":
 		[
 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
@@ -63,7 +64,7 @@
 			{ "key": "selector", "operator": "equal", "operand": "text", "match_all": true }
 		]
 	},
-	// Auto-pair smart quotes // OK -- but what about following/preceding regexs?
+	// Auto-pair smart quotes
 	{ "keys": ["'"], "command": "insert_snippet", "args": {"contents": "‘$0’"}, "context":
 		[
 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
@@ -91,7 +92,7 @@
 			{ "key": "selector", "operator": "equal", "operand": "text", "match_all": true }
 		]
 	},
-	// Do not overwrite smart quotes with dumb quotes // OK, I think
+	// Do not overwrite smart quotes with dumb quotes
 	{ "keys": ["'"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
 		[
 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
@@ -100,6 +101,7 @@
 			{ "key": "selector", "operator": "equal", "operand": "text", "match_all": true }
 		]
 	},
+	// Remove paired smart quotes
 	{ "keys": ["backspace"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Left Right.sublime-macro"}, "context":
 		[
 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
