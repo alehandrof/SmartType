@@ -22,6 +22,7 @@
 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
 			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
 			{ "key": "following_text", "operator": "regex_contains", "operand": "^\\S", "match_all": true },
+			{ "key": "following_text", "operator": "not_regex_contains", "operand": "^(’|\\)|\\]|-|–|—)", "match_all": true },
 			{ "key": "selector", "operator": "equal", "operand": "text", "match_all": true }
 		]
 	},
@@ -31,6 +32,7 @@
 			{ "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
 			{ "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
 			{ "key": "preceding_text", "operator": "regex_contains", "operand": "\\S$", "match_all": true },
+			{ "key": "preceding_text", "operator": "not_regex_contains", "operand": "(‘|\\(|\\[|-|–|—)$", "match_all": true },
 			{ "key": "selector", "operator": "equal", "operand": "text", "match_all": true }
 		]
 	},
