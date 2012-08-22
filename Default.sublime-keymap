@@ -1,6 +1,6 @@
 [
 
-/*** Smart Double Quotes (“”) ***/
+/*** ! Smart Double Quotes (“”) ***/
 
 	// Surround selection with smart quotes
 	{ "keys": ["\""], "command": "insert_snippet", "args": {"contents": "“${0:$SELECTION}”"}, "context":
@@ -58,7 +58,7 @@
 		]
 	},
 
-/*** Smart Single Quotes (‘’) ***/
+/*** ! Smart Single Quotes (‘’) ***/
 
 	// Surround selection with smart quotes
 	{ "keys": ["'"], "command": "insert_snippet", "args": {"contents": "‘${0:$SELECTION}’"}, "context":
@@ -116,7 +116,7 @@
 		]
 	},
 
-/*** Auto insert Typographic Symbols ***/
+/*** ! Auto-Insert Typographic Symbols ***/
 
 	// Em Dash (—)
 	{ "keys": ["-"], "command": "run_macro_file", "args": {"file": "Packages/SmartType/Insert Em Dash.sublime-macro"}, "context":
