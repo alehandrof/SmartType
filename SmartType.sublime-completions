@@ -1,0 +1,9 @@
+{
+	"scope": "text",
+	"completions":
+	[
+		// Dashes
+		{ "trigger": "n-", "contents": "–" },
+		{ "trigger": "m-", "contents": "—" }
+	]
+}
