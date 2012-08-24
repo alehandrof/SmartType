@@ -3,7 +3,7 @@
 	"completions":
 	[
 		// Dashes
-		{ "trigger": "n-", "contents": "–" },
-		{ "trigger": "m-", "contents": "—" }
+		{ "trigger": "--", "contents": "–" },
+		{ "trigger": "---", "contents": "—" }
 	]
 }
