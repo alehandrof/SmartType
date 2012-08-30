@@ -8,7 +8,7 @@ This package provides smart typography as you type. It’s very much a work in p
 - **Smart Quotes**. Just use the regular dumb quotes and (hopefully) they will be converted to the appropriate quotation mark as you type.
 
 - **Auto insert**.
-	- a space followed by two hyphens (` --`) will be converted to an *en dash*
+	- a space followed by two hyphens (`&nbsp;--`) will be converted to an *en dash*
 	- three consecutives hyphens (`---`) will be converted to an *em dash*
 	- three consecutives dots (`...`) will be converted to an *ellipsis* [optional; requires setting`"smart_type_ellipsis": true`]
 
